@@ -1,4 +1,16 @@
 {
+  "name": "project-css",
+  "version": "1.0.0",
+  "description": "Css project with boostrap",
+  "repository": "git@github.com:Alexandre-st/Project-css.git",
+  "author": "Alexandre-st",
+  "license": "MIT",
+  "private": false,
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
   "dependencies": {
     "parcel": "^2.9.3"
   }
