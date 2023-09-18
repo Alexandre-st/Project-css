@@ -1,0 +1,40 @@
+body {
+  background-color: rgba(122, 177, 232, 0.2);
+}
+
+.input-search {
+  display: flex;
+  gap: 1rem;
+  margin: 1.6rem 0 0.5rem 0 !important;
+}
+
+#rechercheInput {
+  border: 1px solid gray;
+}
+
+.menu {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.menu-item {
+  color: #417dc4;
+  background-image: linear-gradient(
+    to bottom,
+    #b7d8f9,
+    #bcdbfa,
+    #c1defc,
+    #c6e2fd,
+    #cbe5ff
+  );
+}
+.list-group-flush > .list-group-item {
+  border-bottom: 3px solid #3558a2;
+}
+
+.list-group-flush > .list-group-item:last-child {
+  border-bottom: 3px solid #3558a2;
+}
+
+.menu-item li {
+  display: none;
+}
