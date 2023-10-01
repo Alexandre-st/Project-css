@@ -2,10 +2,26 @@ body {
   background-color: rgba(122, 177, 232, 0.2);
 }
 
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(100% - 4rem, 111rem);
+    margin-inline: auto;
+  }
+}
+
 .input-search {
   display: flex;
   gap: 1rem;
   margin: 1.6rem 0 0.5rem 0 !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .input-search {
+    margin: 0 !important;
+  }
 }
 
 #rechercheInput {
@@ -16,6 +32,7 @@ body {
   text-align: center;
   font-size: 1.2rem;
 }
+
 .menu-item {
   color: #417dc4;
   background-image: linear-gradient(
@@ -35,7 +52,6 @@ body {
 
 .menu-item ul.active {
   display: block;
-  /* position: absolute; */
 }
 
 .menu-item li {
@@ -70,6 +86,19 @@ body {
   font-weight: bold;
 }
 
+@media screen and (min-width: 1024px) {
+  nav {
+    margin: 1.2rem 0;
+    width: min(100% - 4rem, 111rem);
+    margin-inline: auto;
+  }
+
+  .filAriane {
+    width: min(100% - 4rem, 111rem);
+    margin-inline: auto;
+  }
+}
+
 h1 {
   text-align: center;
   background-color: #3558a2;
@@ -97,7 +126,6 @@ h1 {
 
 .main-section-child a {
   display: flex;
-  /* justify-content: center; */
   text-indent: 1.4rem;
   align-items: center;
   padding: 1rem 0;
@@ -110,6 +138,47 @@ h1 {
   padding-left: 1.4rem;
   color: #5c5470;
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    width: min(100% - 4rem, 111rem);
+    margin-inline: auto;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .main-section {
+    box-shadow: 0px 3px 3px rgba(122, 177, 232, 0.3);
+    border-radius: 0 0 0.4rem 0.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-section-child {
+    flex: 1;
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .main-section-child a {
+    text-indent: 0rem;
+    padding: 0 0 0 1rem;
+  }
+  .main-section img {
+    margin-right: 0.4rem;
+  }
+
+  .main-section-child ul {
+    font-size: 1rem;
+    padding-left: 1rem;
+    margin-top: 1.4rem;
+  }
 }
 
 /* Aside */
@@ -171,6 +240,13 @@ aside div:last-child div a {
   padding-right: 1.2rem;
 }
 
+@media screen and (min-width: 1024px) {
+  aside {
+    margin: 0;
+  }
+}
+
+/* FOOTER */
 footer {
   background-color: #017dc4;
   color: #fff;
@@ -195,4 +271,29 @@ footer div:first-child {
 footer div:last-child {
   background-color: #2528a2;
   padding: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    width: min(100% - 4rem, 111rem);
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+  }
+
+  footer div {
+    display: flex;
+  }
+
+  footer div ul:first-child {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  footer div:last-child {
+    border-radius: 0 0 0.4rem 0.4rem;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
