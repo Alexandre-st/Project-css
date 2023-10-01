@@ -149,6 +149,11 @@ h1 {
     padding-bottom: 2rem;
   }
 
+  h1 {
+    text-align: left;
+    text-indent: 3rem;
+  }
+
   .main-section {
     box-shadow: 0px 3px 3px rgba(122, 177, 232, 0.3);
     border-radius: 0 0 0.4rem 0.4rem;
@@ -243,6 +248,10 @@ aside div:last-child div a {
 @media screen and (min-width: 1024px) {
   aside {
     margin: 0;
+  }
+
+  aside div > h3 {
+    text-indent: 5rem;
   }
 }
 
