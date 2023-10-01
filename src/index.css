@@ -26,7 +26,29 @@ body {
     #c6e2fd,
     #cbe5ff
   );
+  position: relative;
 }
+
+.menu-item ul {
+  display: none;
+}
+
+.menu-item ul.active {
+  display: block;
+  /* position: absolute; */
+}
+
+.menu-item li {
+  background-image: linear-gradient(
+    to bottom,
+    #b7d8f9,
+    #bcdbfa,
+    #c1defc,
+    #c6e2fd,
+    #cbe5ff
+  );
+}
+
 .list-group-flush > .list-group-item {
   border-bottom: 3px solid #3558a2;
 }
@@ -35,15 +57,12 @@ body {
   border-bottom: 3px solid #3558a2;
 }
 
-.menu-item li {
-  display: none;
-}
-
 .filAriane {
   display: flex;
   font-size: 1rem;
   margin-top: 1.4rem;
-  text-indent: 1.4rem;
+  margin-left: 1.4rem;
+  color: #5c5470;
 }
 
 .filAriane li:first-child {
@@ -63,18 +82,11 @@ h1 {
 
 .main-header {
   font-size: 1.3rem;
-  color: #465f9d;
+  color: #5c5470;
 }
 
 .main-section {
-  background-image: linear-gradient(
-    to bottom,
-    #b7d8f9,
-    #bcdbfa,
-    #c1defc,
-    #c6e2fd,
-    #cbe5ff
-  );
+  background-color: rgba(122, 177, 232, 0.1);
 }
 
 .main-section-child {
@@ -89,10 +101,98 @@ h1 {
   text-indent: 1.4rem;
   align-items: center;
   padding: 1rem 0;
-  color: #465f9d;
+  color: #225ddb;
   padding-left: 1.4rem;
+  font-style: bold;
 }
 
 .main-section-child ul {
   padding-left: 1.4rem;
+  color: #5c5470;
+  font-size: 1.2rem;
+}
+
+/* Aside */
+aside {
+  margin: 2rem 0;
+}
+
+aside div {
+  margin-bottom: 1.4rem;
+  border-radius: 0 0 0.4rem 0.4rem;
+  box-shadow: 0px 3px 3px rgba(122, 177, 232, 0.2);
+  font-size: 1rem;
+  color: #5c5470;
+  line-height: 1.6rem;
+}
+
+aside div:last-child {
+  margin-bottom: 0;
+}
+
+aside div ul {
+  padding: 1.6rem 1.2rem;
+}
+
+aside div > h3 {
+  color: #fff;
+  padding: 0.2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-indent: 1.4rem;
+}
+
+aside div:first-child h3 {
+  background-color: #3558a2;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+aside div:last-child h3 {
+  background-color: rgb(137, 36, 36);
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+aside div div a {
+  text-align: end;
+}
+
+aside div ul li span {
+  color: rgb(137, 36, 36);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+aside div:first-child div a {
+  color: #225ddb;
+  padding-right: 1.2rem;
+}
+aside div:last-child div a {
+  color: rgb(137, 36, 36);
+  padding-right: 1.2rem;
+}
+
+footer {
+  background-color: #017dc4;
+  color: #fff;
+  font-size: 1rem;
+}
+
+footer div ul li ul li {
+  list-style: disc;
+}
+footer div ul li {
+  list-style: none;
+}
+
+footer div ul li::marker {
+  color: #b7d8f9;
+}
+
+footer div:first-child {
+  padding: 1.2rem 1.8rem;
+}
+
+footer div:last-child {
+  background-color: #2528a2;
+  padding: 1.2rem;
 }
