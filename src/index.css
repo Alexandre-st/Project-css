@@ -50,8 +50,21 @@ body {
   display: none;
 }
 
+/* This working on desktop */
+/* .menu-item ul.active {
+  display: block;
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  left: 0;
+} */
+
 .menu-item ul.active {
   display: block;
+  position: relative;
+  top: 3rem;
+  width: 100%;
+  left: 0;
 }
 
 .menu-item li {

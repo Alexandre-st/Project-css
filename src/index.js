@@ -1,10 +1,13 @@
-const menuItems = document.querySelectorAll('.menu-item');
-console.log(menuItems);
+const menuItems = document.querySelectorAll(".menu-item");
 
 menuItems.forEach((item) => {
-  item.addEventListener('click', (evt) => {
-    const subMenu = item.querySelector('ul');
-    subMenu.classList.toggle('active');
-    evt.preventDefault();
-  })
-})
+  const subMenu = item.querySelector("ul");
+
+  item.addEventListener("mouseover", () => {
+    subMenu.classList.add("active");
+  });
+
+  item.addEventListener("mouseleave", () => {
+    subMenu.classList.remove("active");
+  });
+});
