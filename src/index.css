@@ -34,7 +34,9 @@ body {
 }
 
 .menu-item {
+  position: relative;
   color: #417dc4;
+  padding: 1rem 0; /* Pour annuler le padding de bootstrap */
   background-image: linear-gradient(
     to bottom,
     #b7d8f9,
@@ -43,31 +45,29 @@ body {
     #c6e2fd,
     #cbe5ff
   );
-  position: relative;
 }
 
 .menu-item ul {
   display: none;
 }
 
-/* This working on desktop */
-/* .menu-item ul.active {
-  display: block;
-  position: absolute;
-  top: 3rem;
-  width: 100%;
-  left: 0;
-} */
-
 .menu-item ul.active {
   display: block;
   position: relative;
-  top: 3rem;
+  top: 0.5rem;
   width: 100%;
   left: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .menu-item ul.active {
+    position: absolute;
+    top: 4rem;
+  }
+}
+
 .menu-item li {
+  padding: 0.2rem 0;
   background-image: linear-gradient(
     to bottom,
     #b7d8f9,
